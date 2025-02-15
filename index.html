@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz Application</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Quiz App</a>
+    </nav>
+
+    <section id="home" class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Welcome to the Quiz App</h1>
+        <p class="lead text-muted">
+          Choose a category and test your knowledge!
+        </p>
+        <p class="text-muted small mt-3">
+          Project by -<br />
+          M.VASANTHADITHYA roll-160123749049<br />
+          P.NAGESH roll-160123749056
+        </p>
+      </div>
+    </section>
+
+    <section id="categories" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <a href="quiz.html?category=history" class="btn btn-primary"
+                >Start Quiz</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Science</h5>
+              <a href="quiz.html?category=science" class="btn btn-primary"
+                >Start Quiz</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Entertainment</h5>
+              <a href="quiz.html?category=entertainment" class="btn btn-primary"
+                >Start Quiz</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-muted text-center py-3">
+      <div class="container">
+        <p>&copy; 2023 Quiz App. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

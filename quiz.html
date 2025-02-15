@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Quiz App</a>
+    </nav>
+
+    <section class="container mt-4">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="quiz-category">Category: Loading...</h2>
+          <div class="progress mb-3">
+            <div
+              id="quiz-progress"
+              class="progress-bar"
+              role="progressbar"
+              style="width: 0%"
+            ></div>
+          </div>
+          <div class="timer mb-3">
+            <span>Time Left:</span>
+            <span id="timer">30</span>s
+          </div>
+          <div id="quiz-question" class="mt-3">
+            <p id="question-text">Loading question...</p>
+            <div class="form-check mt-2" id="answer-options">
+              <!-- Options will be dynamically inserted here -->
+            </div>
+          </div>
+          <button
+            id="next-button"
+            class="btn btn-primary mt-3"
+            onclick="nextQuestion()"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-muted text-center py-3">
+      <div class="container">
+        <p>&copy; 2023 Quiz App. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+    <script src="quizzes.js"></script>
+    <style>
+      .timer {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #dc3545;
+      }
+      .progress {
+        height: 20px;
+      }
+      .feedback {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        display: none;
+      }
+      .feedback.correct {
+        background-color: #d4edda;
+        color: #155724;
+      }
+      .feedback.incorrect {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+    </style>
+  </body>
+</html>
