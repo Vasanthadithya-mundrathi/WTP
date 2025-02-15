@@ -38,9 +38,3 @@ A simple yet powerful quiz application built with HTML, CSS, and JavaScript.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Screenshots
-
-![Home Page](screenshots/home.png)
-![Quiz Page](screenshots/quiz.png)
-![Results Page](screenshots/results.png)
