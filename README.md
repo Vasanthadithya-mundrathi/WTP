@@ -1,6 +1,6 @@
 # Quiz Application
 
-![Quiz App Screenshot](screenshot.png)
+
 
 A simple yet powerful quiz application built with HTML, CSS, and JavaScript.
 
